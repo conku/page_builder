@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"errors"
 
+	"github.com/conku/admin"
+	"github.com/conku/qor"
+	"github.com/conku/qor/resource"
+	"github.com/conku/slug"
+	"github.com/conku/widget"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/slug"
-	"github.com/qor/widget"
 )
 
 type Page struct {
@@ -120,6 +120,6 @@ func New(config *Config) *admin.Resource {
 			RemoteDataResource: config.Containers.WidgetSettingResource,
 		}})
 
-	admin.RegisterViewPath("github.com/qor/page_builder/views")
+	admin.RegisterViewPath("github.com/conku/page_builder/views")
 	return resource
 }
