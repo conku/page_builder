@@ -6,11 +6,11 @@ import (
 	"errors"
 
 	"github.com/conku/admin"
+	"github.com/conku/gorm"
 	"github.com/conku/qor"
 	"github.com/conku/qor/resource"
 	"github.com/conku/slug"
 	"github.com/conku/widget"
-	"github.com/jinzhu/gorm"
 )
 
 type Page struct {
